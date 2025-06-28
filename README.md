@@ -1,73 +1,114 @@
-# Welcome to your Lovable project
+# 💊 MedVault – Medical Record App
 
-## Project info
+**MedVault** is a modern, responsive web application designed to manage medical records and appointments securely and intuitively. Built with a dark-mode-first theme aesthetics, MedVault provides users with a seamless, elegant healthcare experience online.
 
-**URL**: https://lovable.dev/projects/4034be37-408c-4d32-84bd-7d5cd726867e
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+### 🌐 General
+- Fully responsive design using **Tailwind CSS**
+- **Dark mode** enabled by default with a toggle to switch between dark and light themes
+- Consistent **glassmorphism UI** for navbars, cards, forms, and modals
+- Modular, component-based structure
 
-**Use Lovable**
+### 🔐 Authentication
+- Secure **Login** and **Signup** pages
+- Input field bug fixed: now responsive on first click
+- Route protection: Medical Records and Appointments only accessible after login
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4034be37-408c-4d32-84bd-7d5cd726867e) and start prompting.
+### 🧭 Navigation
+- Frosted-glass Navbar with:
+  - MedVault Logo
+  - Links to Home, Appointments, Records, About
+  - Toggle switch for theme mode
+  - Gradient-styled Login and CTA buttons
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🦸 Hero Section
+- Inspired by [this design](https://21st.dev/meschacirung/hero-section-1/default)
+- Customized with a **health-themed illustration**
+- Bold headline, subtle subtext, and CTA integrated with site styling
 
-**Use your preferred IDE**
+### 📊 Dashboard (Landing Page Section)
+- Preview of Health Dashboard with 3 frosted cards:
+  - 📊 Health Score
+  - 📅 Next Appointment
+  - 💊 Medications
+- Pulsing green indicator showing system status
+- Responsive layout across dark/light themes
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📁 Medical Records Page
+- Protected route
+- Features:
+  - Search for records
+  - Add, delete, and download medical records
+  - PDF export
+- Glass-effect containers and interactive buttons
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 📅 Appointments
+- Booking form with inputs for patient name, symptoms, doctor, and date
+- Date input opens on full-click area
+- Accessible only after login
 
-Follow these steps:
+### 🔚 Footer
+- Navy blue themed in dark mode
+- Simple link layout consistent with theme
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🛠️ Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+- HTML5
+- Tailwind CSS 3
+- JavaScript (Vanilla or React depending on setup)
+- Optional: PDF export using jsPDF or equivalent
+- LocalStorage (or backend integration-ready)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🖼️ Screenshots
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+_Add screenshots here of:_
+- Landing Page
+- Login Page
+- Records Page
+- Appointment Page (Dark & Light mode)
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔒 Access Control
 
-## What technologies are used for this project?
+- Users must **Login** or **Signup** to access protected routes
+- Unauthorized access redirects to login with alert
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📁 Folder Structure (example)
 
-## How can I deploy this project?
+```bash
+medvault/
+├── public/
+│   └── assets/          # Images and icons
+├── src/
+│   ├── components/      # Navbar, Hero, Cards, Forms
+│   ├── pages/           # Home, Login, Signup, Records, Appointment
+│   └── App.js / index.js
+├── README.md
+└── tailwind.config.js
 
-Simply open [Lovable](https://lovable.dev/projects/4034be37-408c-4d32-84bd-7d5cd726867e) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📝 License
 
-Yes, you can!
+This project is licensed under the [MIT License](LICENSE).
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🙌 Acknowledgements
+
+- [jsPDF](https://github.com/parallax/jsPDF)
+- [Coolors Palette](https://coolors.co/palette/03045e-0077b6-00b4d8-90e0ef-caf0f8)
+
+---
+
+> Built with ❤️ by Suraj (https://github.com/Suraj-22-12)
